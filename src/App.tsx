@@ -1,9 +1,9 @@
-import logo from './assets/logo.svg';
+import { Header } from './components/Header';
 
 function App() {
   return (
     <div className="App">
-      <img src={logo} alt="ToDo list logo" />
+      <Header />
     </div>
   );
 }
