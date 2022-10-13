@@ -31,5 +31,5 @@ button {
   font-family: 'Inter', sans-serif;
   line-height: 140%;
   background-color: var(--gray-600);
-  color: #fff;
+  color: var(--gray-100);
 }
