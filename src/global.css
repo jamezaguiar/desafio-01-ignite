@@ -33,3 +33,7 @@ button {
   background-color: var(--gray-600);
   color: var(--gray-100);
 }
+
+button {
+  cursor: pointer;
+}

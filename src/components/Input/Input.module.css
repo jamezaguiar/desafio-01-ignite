@@ -5,6 +5,7 @@
   border-radius: 8px;
   font-size: var(--font-xl);
   color: var(--gray-100);
+  height: 54px;
 }
 
 .input:focus {
