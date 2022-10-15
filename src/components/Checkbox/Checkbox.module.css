@@ -4,8 +4,8 @@
 
 .checkbox input[type='checkbox'] {
   appearance: none;
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   border: 2px solid var(--blue);
   outline: none;
@@ -30,7 +30,7 @@
 
 .checkbox input[type='checkbox']:checked::before {
   content: '\2714';
-  font-size: var(--font-md);
+  font-size: var(--font-sm);
   color: #fff;
   position: absolute;
   top: 50%;
