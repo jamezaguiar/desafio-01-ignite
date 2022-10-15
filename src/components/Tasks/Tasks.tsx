@@ -18,10 +18,31 @@ export function Tasks() {
     ]);
   }
 
+  function onCompleteTask(taskId: number, value: boolean) {
+    setTasks(prevTasks => {
+      const findTask = prevTasks.find(task => task.id === taskId);
+
+      if (findTask) {
+        findTask.isCompleted = value;
+        return prevTasks.map(task => (task.id === taskId ? findTask : task));
+      }
+
+      return prevTasks;
+    });
+  }
+
+  function onDeleteTask(taskId: number) {
+    setTasks(prevTasks => prevTasks.filter(task => task.id !== taskId));
+  }
+
   return (
     <main className={styles.tasks}>
       <AddTask onCreateTask={onCreateTask} />
-      <TaskList tasks={tasks} />
+      <TaskList
+        tasks={tasks}
+        onCompleteTask={onCompleteTask}
+        onDeleteTask={onDeleteTask}
+      />
     </main>
   );
 }

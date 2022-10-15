@@ -15,6 +15,11 @@
   gap: 8px;
 }
 
-.create-button:hover {
+.create-button:hover:not(:disabled) {
   background-color: var(--blue);
+}
+
+.create-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
 }

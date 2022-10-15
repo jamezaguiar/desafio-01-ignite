@@ -13,6 +13,7 @@ export function AddTask({ onCreateTask }: AddTaskProps) {
 
   function handleCreateTask() {
     onCreateTask(inputValue);
+    setInputValue('');
   }
 
   return (
@@ -22,7 +23,7 @@ export function AddTask({ onCreateTask }: AddTaskProps) {
         value={inputValue}
         onChange={e => setInputValue(e.target.value)}
       />
-      <CreateButton onClick={handleCreateTask}>
+      <CreateButton onClick={handleCreateTask} disabled={!inputValue}>
         Criar <PlusCircle size={32} />
       </CreateButton>
     </div>
