@@ -1,0 +1,29 @@
+.tasks-info {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.created-label {
+  color: var(--blue);
+}
+
+.concluded-label {
+  color: var(--purple);
+}
+
+.created-label,
+.concluded-label {
+  font-size: var(--font-md);
+  font-weight: 700;
+}
+
+.pill {
+  background-color: var(--gray-400);
+  border-radius: 999px;
+  padding: 2px 8px;
+  color: var(--gray-200);
+  font-size: var(--font-sm);
+  margin-left: 8px;
+}

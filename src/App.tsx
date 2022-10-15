@@ -1,11 +1,11 @@
 import { Header } from './components/Header';
-import { Main } from './components/Main';
+import { Tasks } from './components/Tasks';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Main />
+      <Tasks />
     </div>
   );
 }
