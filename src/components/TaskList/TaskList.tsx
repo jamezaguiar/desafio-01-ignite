@@ -1,4 +1,5 @@
 import { Task } from '../../types';
+import { DeleteButton } from '../DeleteButton';
 import { TasksInfo } from '../TasksInfo';
 import styles from './TaskList.module.css';
 
