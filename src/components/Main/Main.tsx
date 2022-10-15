@@ -1,12 +1,15 @@
-import { CreateButton } from '../CreateButton/CreateButton';
+import { CreateButton } from '../CreateButton';
 import { Input } from '../Input';
+import { PlusCircle } from 'phosphor-react';
 import styles from './Main.module.css';
 
 export function Main() {
   return (
     <main className={styles.main}>
       <Input placeholder="Adicione uma nova tarefa" />
-      <CreateButton>Criar</CreateButton>
+      <CreateButton>
+        Criar <PlusCircle size={32} />
+      </CreateButton>
     </main>
   );
 }

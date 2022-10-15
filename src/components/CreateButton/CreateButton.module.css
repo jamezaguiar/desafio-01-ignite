@@ -4,12 +4,15 @@
   border: none;
   border-radius: 8px;
   color: var(--gray-100);
+  font-weight: 700;
+  font-size: var(--font-md);
   min-width: 90px;
   height: 52px;
 
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
 }
 
 .create-button:hover {
